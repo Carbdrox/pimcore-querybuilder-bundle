@@ -236,7 +236,7 @@ class QueryBuilder
     /**
      * @param string|bool|float|int|null $value
      */
-    public function escape(mixed $value): string|float|int
+    private function escape(mixed $value): string|float|int
     {
         if (is_array($value)) {
             return sprintf('(%s)', implode(',', array_map(fn ($value) => $this->escape($value), array_values($value))));
@@ -287,7 +287,7 @@ class QueryBuilder
         return $this->getListing()->load();
     }
 
-    public function getListing(): ListingConcrete
+    private function getListing(): ListingConcrete
     {
         $listing = new $this->listingClass();
         $listing = $this->compileJoins($listing);
