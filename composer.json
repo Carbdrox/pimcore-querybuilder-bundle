@@ -1,0 +1,31 @@
+{
+  "name": "carbdrox/pimcore-querybuilder-bundle",
+  "version": "0.9.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Förster",
+      "email": "github@foerster.dev",
+      "role": "Developer"
+    }
+  ],
+  "type": "pimcore-bundle",
+  "description": "Pimcore Vite integration",
+  "readme": "README.md",
+  "keywords": ["pimcore", "query", "querybuilder", "builder", "QueryBuilder"],
+  "autoload": {
+    "psr-4": {
+      "QueryBuilderBundle\\": "src/QueryBuilderBundle"
+    }
+  },
+  "require": {
+    "pimcore/pimcore": ">=10.0"
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "QueryBuilderBundle\\QueryBuilderBundle"
+      ]
+    }
+  }
+}
