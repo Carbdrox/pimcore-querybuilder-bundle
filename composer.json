@@ -10,7 +10,7 @@
     }
   ],
   "type": "pimcore-bundle",
-  "description": "Pimcore Vite integration",
+  "description": "Pimcore QueryBuilder Bundle for easy query generation.",
   "readme": "README.md",
   "keywords": ["pimcore", "query", "querybuilder", "builder", "QueryBuilder"],
   "autoload": {
